@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_header">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/title" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_metallica">
+
+            <TextView
+                android:id="@+id/metallica_text_view"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Metallica" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_pavarotti">
+
+            <TextView
+                android:id="@+id/pavarotti_text_view"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Luciano Pavarotti" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_marvin">
+
+            <TextView
+                android:id="@+id/marvin_text_view"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Marvin Gaye" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_dusty">
+
+            <TextView
+                android:id="@+id/dusty_text_view"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Dusty Springfield" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/category_now_playing">
+
+            <TextView
+                android:id="@+id/now_playing_text_view"
+                style="@style/CategoryStyle"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/now_playing" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+    <string name="now_playing">Now Playing</string>
+    <!-- -->
+    <string name="title">Please select an Artist below</string>
+    <!-- Messages used in the NowPlayingActivity.java-->
+    <!-- Toast, Ask the user to select a song to play-->
+    <string name="select_song">Please select a song to play</string>
+    <!-- Toast, Tell user song is finished-->
+    <string name="song_finished">Song finished!</string>
+
+    <!-- Song label used in NowPlayingActivity.java  -->
+    <string name="song_name">Song: </string>
+    <!-- Album label used in NowPlayingActivity.java  -->
+    <string name="album_name">Album: </string>
+    <!-- Artist label used in NowPlayingActivity.java  -->
+    <string name="Artist_name">Artist: </string>
+
+</resources>

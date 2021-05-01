@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/now_playing_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/category_now_playing"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="48dp"
+        tools:context=".NowPlayingActivity">
+
+        <!-- Song / Track details -->
+        <!--
+            Art Work used
+            Has a default image in case a song is NOT selected
+            Art work added with Intents
+            Source, wikipedia
+        -->
+        <ImageView
+            android:id="@+id/art_playing_image_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:src="@drawable/default_image_en" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <TextView
+                style="@style/nowPlayingStyle"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="@string/song_name"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:id="@+id/song_playing_text_view"
+                style="@style/nowPlayingStyle"
+                android:layout_weight="2"
+                android:text=" " />
+
+        </LinearLayout>
+
+        <!-- Album name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/nowPlayingStyle"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="@string/album_name"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:id="@+id/album_playing_text_view"
+                style="@style/nowPlayingStyle"
+                android:layout_weight="2"
+                android:text=" " />
+
+        </LinearLayout>
+
+        <!-- Artist name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/nowPlayingStyle"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="@string/album_name"
+                android:textAlignment="viewEnd" />
+
+            <TextView
+                android:id="@+id/band_playing_text_view"
+                style="@style/nowPlayingStyle"
+                android:layout_weight="2"
+                android:text=" " />
+
+        </LinearLayout>
+
+        <!--
+            Buttons to control the media player
+        -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="32dp">
+
+            <ImageView
+                android:id="@+id/stop_image"
+                style="@style/controlButtons"
+                android:src="@drawable/baseline_stop_24" />
+
+            <ImageView
+                android:id="@+id/play_image"
+                style="@style/controlButtons"
+                android:src="@drawable/baseline_play_arrow_24" />
+
+            <ImageView
+                android:id="@+id/pause_image"
+                style="@style/controlButtons"
+                android:src="@drawable/baseline_pause_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
