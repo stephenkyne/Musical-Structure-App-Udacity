@@ -5,7 +5,7 @@ The Musical Structure App has four Activies that hold a album / list of songs fr
 Completed on Monday the 3 - May - 2021
 ### Built with ###
 - Android SDK 4.1.3
-- API 19
+- API 19+
 - Java
 
 ## Use of photo ##
@@ -15,6 +15,7 @@ Completed on Monday the 3 - May - 2021
 ## Known Issues ##
 - The code and methods used in this project are out of date. Below is a list of known issues.
 - The mp3 files are not the real songs files. This was done due to copyright issues.
+- A ListView is used instead of a RecycleView.
 
 ### Layouts ###
 The layouts used are the old method, LinearLayout instead of the newer constraintlayout.
